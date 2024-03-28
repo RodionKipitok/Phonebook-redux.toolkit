@@ -1,16 +1,13 @@
-export const App = () => {
+import { PhonebookForm } from './Phonebook/Form/Form';
+import Filter from './Phonebook/Filter/Filter';
+import Contacts from './Phonebook/Contact/Contacts';
+
+export default function App(params) {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <>
+      <PhonebookForm />
+      <Filter />
+      <Contacts />
+    </>
   );
-};
+}
